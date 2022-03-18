@@ -1,4 +1,4 @@
-package com.SourceCode.FilkomTourTravel;
+package com.SourceCode.DataKaryawan;
 
 public class Karyawan {
     String nama;

@@ -1,4 +1,4 @@
-package com.SourceCode.StudiKasus3;
+package com.SourceCode.FilkomTourAndTravel;
 
 public class Karyawan {
     private String nama, alamat, noTelp, jk, kategori;

@@ -1,4 +1,4 @@
-package com.SourceCode.StudiKasus3;
+package com.SourceCode.FilkomTourAndTravel;
 
 import java.util.Scanner;
 

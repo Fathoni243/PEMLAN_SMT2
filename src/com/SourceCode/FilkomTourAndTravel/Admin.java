@@ -1,4 +1,4 @@
-package com.SourceCode.StudiKasus3;
+package com.SourceCode.FilkomTourAndTravel;
 
 public class Admin extends Karyawan{
     private int tunjangan;
