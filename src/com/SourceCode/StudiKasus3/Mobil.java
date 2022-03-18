@@ -42,4 +42,12 @@ public class Mobil {
         this.thKeluaran = thKeluaran;
     }
 
+    void getInfo(){
+        System.out.println("=========================================");
+        System.err.println("Nomor Plat             : "+getNoPlat());
+        System.err.println("Merk Mobil             : "+getMerk());
+        System.err.println("Warna Mobil            : "+getWarna());
+        System.err.println("Tahun Keluaran         : "+getThKeluaran());
+    }
+
 }

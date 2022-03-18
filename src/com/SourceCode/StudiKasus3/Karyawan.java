@@ -50,4 +50,13 @@ public class Karyawan {
     public void setKategori(String kategori) {
         this.kategori = kategori;
     }
+
+    void getInfo(){
+        System.out.println("=========================================");
+        System.out.println("Nama Karyawan          : "+getNama());
+        System.out.println("Alamat Karyawan        : "+getAlamat());
+        System.out.println("noTelp Karyawan        : "+getNoTelp());
+        System.out.println("Jenis Kelamin Karyawan : "+getJk());
+        System.out.println("Kategori Karyawan      : "+getKategori());
+    }
 }
