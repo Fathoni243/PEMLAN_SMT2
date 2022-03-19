@@ -43,7 +43,6 @@ public class Mobil {
     }
 
     void getInfo(){
-        System.out.println("=========================================");
         System.err.println("Nomor Plat             : "+getNoPlat());
         System.err.println("Merk Mobil             : "+getMerk());
         System.err.println("Warna Mobil            : "+getWarna());

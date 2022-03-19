@@ -52,7 +52,6 @@ public class Karyawan {
     }
 
     void getInfo(){
-        System.out.println("=========================================");
         System.out.println("Nama Karyawan          : "+getNama());
         System.out.println("Alamat Karyawan        : "+getAlamat());
         System.out.println("noTelp Karyawan        : "+getNoTelp());

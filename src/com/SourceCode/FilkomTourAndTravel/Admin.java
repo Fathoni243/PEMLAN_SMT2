@@ -21,6 +21,5 @@ public class Admin extends Karyawan{
     void getInfo() {
         super.getInfo();
         System.out.println("Tunjangan Karyawan     : "+getTunjangan());
-        System.out.println("=========================================");
     }
 }

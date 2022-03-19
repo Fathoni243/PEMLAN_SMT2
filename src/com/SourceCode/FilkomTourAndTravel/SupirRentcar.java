@@ -19,7 +19,7 @@ public class SupirRentcar extends Karyawan {
     @Override
     void getInfo (){
         super.getInfo();
-        System.out.println("Mobil Sewa             : ");
+        System.out.println("=========== Mobil Yang Disewa ===========");
         mobil_sewa.getInfo();
     }
     

@@ -21,9 +21,6 @@ public class SupirTravel extends Karyawan {
     void getInfo() {
         super.getInfo();
         System.out.println("Rute Trayek            : "+ rute_trayek);
-        System.out.println("=========================================");   
-    }
-
-    
+    }  
     
 }

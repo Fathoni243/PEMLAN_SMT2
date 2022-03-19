@@ -60,16 +60,20 @@ public class Main {
                 karyawanArray[i] = new Admin(nama, alamat, noTelp, jk, kategori, tunjangan);
 
             }else if (kategori.equalsIgnoreCase("supir rentcar")) {
-                System.out.println("== Daftar Mobil Sewa ==");
+                System.out.println("=========================================");
+                System.out.println("=========== Daftar Mobil Sewa ===========");
+                System.out.println("=========================================");
                 for (int j = 0; j < mobilArray.length; j++) {
                     System.out.println("Mobil ke-"+(j+1));
                     mobilArray[j].getInfo();
+                    System.out.println("=========================================");
                 }
                 System.out.print("Pilih Mobil Sewa       : ");
                 pilihMobil = scan.nextInt()-1; 
                 scan.nextLine();
                 karyawanArray[i] = new SupirRentcar(nama, alamat, noTelp, jk, kategori, mobilArray[pilihMobil]);
             }
+            
         }
 
         getTampil(mobilArray, karyawanArray);
@@ -77,12 +81,19 @@ public class Main {
     }
 
     public static void getTampil(Mobil[] mobil, Karyawan[] karyawan ){
+        System.out.println("=========================================");
+        System.out.println("=========== Daftar Mobil Sewa ===========");
+        System.out.println("=========================================");
         for (int i = 0; i < mobil.length; i++) {
             mobil[i].getInfo();
+            System.out.println("=========================================");
         }
 
+        System.out.println("============ Daftar Karyawan ============");
+        System.out.println("=========================================");
         for (int i = 0; i < karyawan.length; i++) {
             karyawan[i].getInfo();
+            System.out.println("=========================================");
         }
     }
 }
