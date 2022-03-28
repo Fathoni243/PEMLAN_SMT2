@@ -40,6 +40,7 @@ public class PegawaiHonorer extends Pegawai{
     void getTampil(){
         super.getTampil();
         System.out.println("Durasi Kerja : "+lamaKerja);
+        System.out.println("Honor : "+ honor);
         System.out.println("Gaji Total : "+hitungGajiHonorer());
     }
 }
