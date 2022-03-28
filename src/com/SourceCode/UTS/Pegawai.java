@@ -1,12 +1,13 @@
 package com.SourceCode.UTS;
 
 public class Pegawai {
-    private String nama;
+    private String nama, kategori;
     private int umur;
 
-    public Pegawai(String nama, int umur) {
+    public Pegawai(String nama, int umur, String kategori) {
         this.nama = nama;
         this.umur = umur;
+        this.kategori = kategori;
     }
 
     public String getNama() {
@@ -23,5 +24,13 @@ public class Pegawai {
 
     public void setUmur(int umur) {
         this.umur = umur;
+    }
+
+    public String getKategori() {
+        return kategori;
+    }
+
+    public void setKategori(String kategori) {
+        this.kategori = kategori;
     }
 }

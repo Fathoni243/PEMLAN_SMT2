@@ -3,8 +3,8 @@ package com.SourceCode.UTS;
 public class Administrasi extends PegawaiTetap{
     private int masaKerja;
 
-    public Administrasi(String nama, int umur, double gajiPokok, int masaKerja) {
-        super(nama, umur, gajiPokok);
+    public Administrasi(String nama, int umur, double gajiPokok, int masaKerja, String kategori) {
+        super(nama, umur, gajiPokok, kategori);
         this.masaKerja = masaKerja;
     }
 
@@ -20,7 +20,7 @@ public class Administrasi extends PegawaiTetap{
         double Tunjangan = 0;
         if (getMasaKerja() > 10) {
             Tunjangan = 0.5 * getGajiPokok();
-        }else {
+        }else { 
             Tunjangan = 0.3 * getGajiPokok();
         }
 

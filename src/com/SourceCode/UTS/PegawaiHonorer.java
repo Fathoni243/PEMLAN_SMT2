@@ -4,8 +4,8 @@ public class PegawaiHonorer extends Pegawai{
     private double honor;
     private int lamaKerja;
 
-    public PegawaiHonorer(String nama, int umur, int lamaKerja) {
-        super(nama, umur);
+    public PegawaiHonorer(String nama, int umur, int lamaKerja, String kategori) {
+        super(nama, umur, kategori);
         this.lamaKerja = lamaKerja;
     }
 

@@ -3,8 +3,8 @@ package com.SourceCode.UTS;
 public class Security extends PegawaiTetap{
     private int durasiKerja;
 
-    public Security(String nama, int umur, double gajiPokok, int durasiKerja) {
-        super(nama, umur, gajiPokok);
+    public Security(String nama, int umur, double gajiPokok, int durasiKerja, String kategori) {
+        super(nama, umur, gajiPokok, kategori);
         this.durasiKerja = durasiKerja;
     }
 
