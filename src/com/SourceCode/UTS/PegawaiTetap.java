@@ -15,4 +15,10 @@ public class PegawaiTetap extends Pegawai{
     public void setGajiPokok(double gajiPokok) {
         this.gajiPokok = gajiPokok;
     }
+
+    @Override
+    void getTampil(){
+        super.getTampil();
+        System.out.println("Gaji Pokok : "+gajiPokok);
+    }
 }

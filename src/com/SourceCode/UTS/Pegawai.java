@@ -33,4 +33,9 @@ public class Pegawai {
     public void setKategori(String kategori) {
         this.kategori = kategori;
     }
+
+    void getTampil() {
+        System.out.println("Nama : " + nama);
+        System.out.println("Umur : " + umur);
+    }
 }

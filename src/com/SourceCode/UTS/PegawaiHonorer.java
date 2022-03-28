@@ -25,13 +25,14 @@ public class PegawaiHonorer extends Pegawai{
         this.lamaKerja = lamaKerja;
     }
 
-    public double hitungGajiHonorer(){
+    public double Lembur(){
         double Lembur = 0;
         if (getLamaKerja() > 8) {
             Lembur = (getLamaKerja() - 8) * 0.1 * getHonor(); 
         }
 
-        double hasil = getHonor() + Lembur;
-        return hasil;
+        return Lembur;
     } 
+
+    
 }
