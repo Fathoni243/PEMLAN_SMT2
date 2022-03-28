@@ -1,4 +1,4 @@
-package com.SourceCode.UTS;
+package com.SourceCode.Quiz1;
 
 public class Security extends PegawaiTetap{
     private int durasiKerja;
@@ -24,6 +24,13 @@ public class Security extends PegawaiTetap{
 
         double hasil = getGajiPokok() + Lembur;
         return hasil;
+    }
+
+    @Override
+    void getTampil(){
+        super.getTampil();
+        System.out.println("Durasi Kerja : "+durasiKerja);
+        System.out.println("Total Gaji : "+hitungGajiSecurity());
     }
 
 }

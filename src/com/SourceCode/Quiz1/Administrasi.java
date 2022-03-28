@@ -1,4 +1,4 @@
-package com.SourceCode.UTS;
+package com.SourceCode.Quiz1;
 
 public class Administrasi extends PegawaiTetap{
     private int masaKerja;
@@ -16,21 +16,23 @@ public class Administrasi extends PegawaiTetap{
         this.masaKerja = masaKerja;
     }
 
-    public double Tunjangan(){
+    public double hitungGajiAdmin(){
         double Tunjangan = 0;
         if (getMasaKerja() > 10) {
             Tunjangan = 0.5 * getGajiPokok();
         }else { 
             Tunjangan = 0.3 * getGajiPokok();
         }
-        return Tunjangan;
+
+        double hasil = getGajiPokok() + Tunjangan;
+        return hasil;
     }
 
     @Override
     void getTampil(){
         super.getTampil();
         System.out.println("Masa Kerja : "+masaKerja);
-        System.out.println("Gaji Total : "+Tunjangan() + getGajiPokok());
+        System.out.println("Total Gaji : "+hitungGajiAdmin());
     }
 
 }

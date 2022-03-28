@@ -1,4 +1,4 @@
-package com.SourceCode.UTS;
+package com.SourceCode.Quiz1;
 
 public class Pegawai {
     private String nama, kategori;

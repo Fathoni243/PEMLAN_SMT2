@@ -1,12 +1,13 @@
-package com.SourceCode.UTS;
+package com.SourceCode.Quiz1;
 
 public class PegawaiHonorer extends Pegawai{
     private double honor;
     private int lamaKerja;
 
-    public PegawaiHonorer(String nama, int umur, int lamaKerja, String kategori) {
+    public PegawaiHonorer(String nama, int umur, int lamaKerja, String kategori, double honor) {
         super(nama, umur, kategori);
         this.lamaKerja = lamaKerja;
+        this.honor = honor;
     }
 
     public double getHonor() {
@@ -25,14 +26,20 @@ public class PegawaiHonorer extends Pegawai{
         this.lamaKerja = lamaKerja;
     }
 
-    public double Lembur(){
+    public double hitungGajiHonorer(){
         double Lembur = 0;
         if (getLamaKerja() > 8) {
             Lembur = (getLamaKerja() - 8) * 0.1 * getHonor(); 
         }
 
-        return Lembur;
+        double hasil = getHonor() + Lembur;
+        return hasil;
     } 
 
-    
+    @Override
+    void getTampil(){
+        super.getTampil();
+        System.out.println("Durasi Kerja : "+lamaKerja);
+        System.out.println("Gaji Total : "+hitungGajiHonorer());
+    }
 }
