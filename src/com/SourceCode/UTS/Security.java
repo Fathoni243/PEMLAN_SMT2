@@ -16,4 +16,14 @@ public class Security extends PegawaiTetap{
         this.durasiKerja = durasiKerja;
     }
 
+    public double hitungGajiSecurity(){
+        double Lembur = 0;
+        if (getDurasiKerja() > 8) {
+            Lembur = (getDurasiKerja() - 8) * 0.1 * getGajiPokok(); 
+        }
+
+        double hasil = getGajiPokok() + Lembur;
+        return hasil;
+    }
+
 }

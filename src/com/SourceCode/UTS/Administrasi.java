@@ -16,13 +16,15 @@ public class Administrasi extends PegawaiTetap{
         this.masaKerja = masaKerja;
     }
 
-    void hitungGajiAdmin(){
+    public double hitungGajiAdmin(){
         double Tunjangan = 0;
         if (getMasaKerja() > 10) {
             Tunjangan = 0.5 * getGajiPokok();
-        }else if(){
-            
+        }else {
+            Tunjangan = 0.3 * getGajiPokok();
         }
-        getGajiPokok();
+
+        double hasil = getGajiPokok() + Tunjangan;
+        return hasil;
     }
 }
