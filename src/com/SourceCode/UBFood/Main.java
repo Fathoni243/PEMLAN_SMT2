@@ -26,7 +26,7 @@ public class Main {
                 System.out.print("Masukkan Harga Produk  : ");
                 Double Harga = scan.nextDouble();
                 DataMerchant.merc = DataMerchant.tambahMerchant(new Merchant(namaMerchant, namaProduk, Harga));
-            }else if(input == 3){
+            }else if(input == 3) {
                 System.out.print("Masukkan Nama Merchant : ");
                 String cariNama = scan.nextLine();
                 DataMerchant.tampilMerchant(DataMerchant.cariMerchant(cariNama));
