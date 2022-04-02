@@ -2,8 +2,6 @@ package com.SourceCode.UBFood;
 
 import java.util.Scanner;
 
-import javax.xml.crypto.Data;
-
 public class DataMerchant {
     static Merchant[] merc = new Merchant[0];
     static Scanner scan = new Scanner(System.in);
@@ -37,6 +35,9 @@ public class DataMerchant {
             System.out.println("Harga           : "+(int)merchant.getHargaMakanan());    
             System.out.println("=======================================");
         }
+        System.out.println("======================================="); 
+        System.out.println("==             CREATED BY            ==");
+        System.out.println("======================================="); 
         System.out.println("Nama            : Ahmad Fathoni");
         System.out.println("NIM             : 215150700111021");
         System.out.println("=======================================");
