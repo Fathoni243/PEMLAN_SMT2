@@ -2,6 +2,8 @@ package com.SourceCode.UBFood;
 
 import java.util.Scanner;
 
+import javax.xml.crypto.Data;
+
 public class DataMerchant {
     static Merchant[] merc = new Merchant[0];
     static Scanner scan = new Scanner(System.in);
@@ -26,33 +28,46 @@ public class DataMerchant {
     }
     
     public static void tampilData(){
-        System.out.println("==== Tampilan Data Merchant UBFood ====");
-        for (int i = 0; i < merc.length; i++) {
-            System.out.println("No Produk       : "+(i+1));
-            System.out.println("Nama Merchant   : "+merc[i].getNamaMerchant());
-            System.out.println("Nama Produk     : "+merc[i].getNamaProduk());
-            System.out.println("Harga           : "+(int)merc[i].getHargaMakanan());    
+        System.out.println("======================================="); 
+        System.out.println("==   Tampilan Data Merchant UBFood   ==");
+        System.out.println("======================================="); 
+        for (Merchant merchant : merc) {
+            System.out.println("Nama Merchant   : "+merchant.getNamaMerchant());
+            System.out.println("Nama Produk     : "+merchant.getNamaProduk());
+            System.out.println("Harga           : "+(int)merchant.getHargaMakanan());    
             System.out.println("=======================================");
         }
+        System.out.println("Nama            : Ahmad Fathoni");
+        System.out.println("NIM             : 215150700111021");
+        System.out.println("=======================================");
     }
 
     public static Merchant cariMerchant(String nama){
-        Merchant save = merc[0];
+        Merchant temp = new Merchant("", "", 0);
+        boolean status = true;
         for (int i = 0; i < merc.length; i++) {
-            if (nama.equalsIgnoreCase(merc[i].getNamaMerchant())) {
-                save = merc[i];
+            if (nama.equalsIgnoreCase(merc[i].getNamaMerchant())) {   
+                temp =  merc[i];
+                status = false;
             }         
         }
-        return save;
+        if (status) {
+            System.out.println("========================================"); 
+            System.out.println("==    Data Tidak Berhasil Ditemukan   ==");
+            System.out.println("========================================"); 
+        }else{
+            System.out.println("========================================"); 
+            System.out.println("==         Cari Data Berhasil         ==");
+            System.out.println("========================================"); 
+        }
+        return temp;
     }
 
     public static void tampilMerchant(Merchant merchant){
-        System.out.println("== Tampilan Cari Data Merchant UBFood ==");
         System.out.println("Nama Merchant   : "+merchant.getNamaMerchant());
         System.out.println("Nama Produk     : "+merchant.getNamaProduk());
         System.out.println("Harga           : "+(int)merchant.getHargaMakanan());    
-        System.out.println("=======================================");
-        
+        System.out.println("========================================");     
     }
 
     public static Merchant updateMerchant(Merchant merchant){
@@ -60,22 +75,32 @@ public class DataMerchant {
         System.out.println("1. Nama Merchant");
         System.out.println("2. Nama Produk");
         System.out.println("3. Harga");
+        System.out.println("4. Kembali");
         System.out.print("Masukkan Inputan Anda : ");
         int input = scan.nextInt();
         scan.nextLine();
+        System.out.println();
+
         if (input == 1) {
             System.out.print("Masukkan Update Nama Merhant  : ");
             String inputNamaMerchant = scan.nextLine();
             merchant.setNamaMerchant(inputNamaMerchant);
+            System.out.println("Update Data Berhasil");
         }else if (input == 2) {
             System.out.print("Masukkan Update Nama Produk  : ");
             String inputNamaProduk = scan.nextLine();
             merchant.setNamaProduk(inputNamaProduk);
+            System.out.println("Update Data Berhasil");
         }else if (input == 3) {
             System.out.print("Masukkan Update Harga  : ");
             Double inputHarga = scan.nextDouble();
             merchant.setHargaMakanan(inputHarga);
+            System.out.println("Update Data Berhasil");
+        }else if (input == 4) {
+        }else{
+            System.out.println("Inputan Anda Salah");
         }
+
         return merchant;
     }
 
