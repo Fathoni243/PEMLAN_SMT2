@@ -22,7 +22,7 @@ public class DataMerchant {
             temp[i] = DataMerchant.merc[i];
         }
         temp[temp.length - 1] = merchant;
-        return temp;
+        return temp; 
     }
     
     public static void tampilData(){
