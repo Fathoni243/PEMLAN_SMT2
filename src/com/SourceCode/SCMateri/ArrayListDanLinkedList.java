@@ -2,7 +2,7 @@ package com.SourceCode.SCMateri;
 
 import java.util.*;
 
-public class pengenalanArrayList {
+public class ArrayListDanLinkedList {
     public static void main(String[] args) {
         // buat ArrayList tanpa tipe data 
         ArrayList arrayList = new ArrayList();
