@@ -7,7 +7,6 @@ public class CarData {
     ArrayList<Car> carList = new ArrayList<Car>();
 
     public void addCar(String carType, String polNum, String merk){
-        // this.carList = new ArrayList<Car>();
         Car car = new Car(carType, polNum, merk, true);
 
         carList.add(car);
