@@ -13,14 +13,14 @@ public class CarData {
     }
 
     public void listOfCar(){
-        System.out.println("------------------------------");
+        System.out.println("-".repeat(32));
         System.out.println("DAFTAR MOBIL");
-        System.out.println("------------------------------");
+        System.out.println("-".repeat(32));
         for (int i = 0; i < carList.size(); i++) {
             System.out.println("TIPE MOBIL : "+carList.get(i).getCarType());
             System.out.println("NO. POLISI : "+carList.get(i).getPolNum());
             System.out.println("MERK MOBIL : "+carList.get(i).getMerk());
-            System.out.println("------------------------------");
+            System.out.println("-".repeat(32));
         }
     }
 

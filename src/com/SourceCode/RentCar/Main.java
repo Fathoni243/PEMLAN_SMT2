@@ -24,5 +24,13 @@ public class Main {
 
         System.out.println();
         arsip.info();
+
+        System.out.println();
+        System.out.println("-".repeat(32));
+        System.out.println("DIBUAT OLEH");
+        System.out.println("-".repeat(32));
+        System.out.println("NAMA          : Ahmad Fathoni");
+        System.out.println("NIM           : 215150700111021");
+        System.out.println("-".repeat(32));
     }   
 }
