@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 
 public class CarData {
-    ArrayList<Car> carList = new ArrayList<Car>();
+    private ArrayList<Car> carList = new ArrayList<Car>();
 
     public void addCar(String carType, String polNum, String merk){
         Car car = new Car(carType, polNum, merk, true);
@@ -22,6 +22,10 @@ public class CarData {
             System.out.println("MERK MOBIL : "+carList.get(i).getMerk());
             System.out.println("------------------------------");
         }
+    }
+
+    public ArrayList<Car> getCarList(){
+        return carList;
     }
 
 }

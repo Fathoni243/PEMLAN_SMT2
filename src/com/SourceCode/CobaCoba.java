@@ -4,8 +4,13 @@ import java.util.*;
 
 public class CobaCoba  {
     public static void main(String args[]) {
-        boolean a = true;
+        boolean a = false;
+        String b = "false";
 
-        System.out.println(a);
+        if (b.equals(a)) {
+            System.out.println(true);
+        }else{
+            System.out.println(false);
+        }
     }
 }

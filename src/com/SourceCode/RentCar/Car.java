@@ -29,8 +29,8 @@ public class Car {
         return status;
     }
 
-    public void setStatus(Boolean status){
-        this.status = status;
+    public void setStatus(String status){
+        this.status = Boolean.parseBoolean(status);
     }
     
 }
