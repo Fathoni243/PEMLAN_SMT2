@@ -11,16 +11,16 @@ public class Main {
         data.listOfCar();
         System.out.println();
         
-        CarRider ming = new CarRider("Koh Bryan", 19, "08970987678");
-        CarRider youhan = new CarRider("Koh Adam", 20, "089876545676");
-        CarRider ling = new CarRider("Koh Aldy", 31, "0898765456788");
-        CarRider kohFaza = new CarRider("Koh Faza", 29, "0898765456789");
+        CarRider Bryan = new CarRider("Koh Bryan", 19, "08970987678");
+        CarRider Adam = new CarRider("Koh Adam", 20, "089876545676");
+        CarRider Aldy = new CarRider("Koh Aldy", 31, "0898765456788");
+        CarRider Faza = new CarRider("Koh Faza", 29, "0898765456789");
 
         RentArchive arsip = new RentArchive();
-        arsip.Rent(ming, data.getCarList().get(1), 9);
-        arsip.Rent(youhan, data.getCarList().get(2), 3);
-        arsip.Rent(ling, data.getCarList().get(1), 1);
-        arsip.Rent(kohFaza, data.getCarList().get(3), 10);
+        arsip.Rent(Bryan, data.getCarList().get(1), 9);
+        arsip.Rent(Adam, data.getCarList().get(2), 3);
+        arsip.Rent(Aldy, data.getCarList().get(1), 1);
+        arsip.Rent(Faza, data.getCarList().get(3), 10);
 
         System.out.println();
         arsip.info();

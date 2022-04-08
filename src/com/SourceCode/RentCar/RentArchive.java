@@ -9,11 +9,11 @@ public class RentArchive {
         CarRent carRent = new CarRent(rider, car, rentDur);
 
         if (car.isStatus() == true) {
-            rentData.add(carRent);
-            System.out.println("MOBIL "+car.getMerk().toUpperCase()+" BERHASIL DISEWA OLEH "+rider.getName());
+            rentData.add(carRent);  
+            System.out.println("MOBIL "+car.getMerk().toUpperCase()+" BERHASIL DISEWA OLEH "+rider.getName().toUpperCase());
             car.setStatus(String.valueOf(false));
         }else{
-            System.out.println("MAAF "+rider.getName()+", MOBIL "+car.getMerk().toUpperCase()+" SUDAH DISEWA");
+            System.out.println("MAAF "+rider.getName().toUpperCase()+", MOBIL "+car.getMerk().toUpperCase()+" SUDAH DISEWA");
         }
     }
 
