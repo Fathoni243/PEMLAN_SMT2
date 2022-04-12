@@ -21,6 +21,9 @@ public class Main {
         scan.nextLine();
         Mobil[] mobilArray = new Mobil[jmlMobil];
 
+        Karyawan karyawan = new Admin("nama", "alamat", "noTelp", "jk", "kategori", 100);
+        System.out.println(karyawan.getNama());
+
         for (int i = 0; i < mobilArray.length; i++) {
             System.out.println("=========================================");
             System.out.println("Mobil ke-"+(i+1));

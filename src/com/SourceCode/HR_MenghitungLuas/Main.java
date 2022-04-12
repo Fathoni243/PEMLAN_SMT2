@@ -2,18 +2,26 @@ package com.SourceCode.HR_MenghitungLuas;
 
 import java.util.*;
 
-class BangunDatar {
-    int sisi, alas, tinggi, jj;
+class Persegi {
+    int sisi;
 
     void RumusPersegi(int sisi){
         int hasil = sisi*sisi;
         System.out.println(hasil);
     }
+}
+
+class Segitiga {
+    int alas, tinggi;
 
     void RumusSegitiga(int alas, int tinggi){
         int hasil = alas * tinggi / 2;
         System.out.println(hasil);
     }
+}
+
+class Lingkaran{
+    int jj;
 
     void RumusLingkaran1(int jj){
         int hasil = (int) (22/7 * jj * jj);
@@ -24,8 +32,8 @@ class BangunDatar {
         int hasil = (int) (3.14 * jj * jj);
         System.out.println((double) hasil);
     }
-
 }
+
 
 public class Main {
     public static void main(String[] args) {
@@ -34,18 +42,18 @@ public class Main {
         byte input = scan.nextByte();
 
         if (input == 1) {
-            BangunDatar persegi = new BangunDatar();
+            Persegi persegi = new Persegi();
             persegi.sisi = scan.nextInt();
             persegi.RumusPersegi(persegi.sisi);
 
         }else if(input == 2){
-            BangunDatar segitiga = new BangunDatar();
+            Segitiga segitiga = new Segitiga();
             segitiga.alas = scan.nextInt();
             segitiga.tinggi = scan.nextInt();
             segitiga.RumusSegitiga(segitiga.alas, segitiga.tinggi);
 
         }else if(input == 3){
-            BangunDatar lingkaran = new BangunDatar();
+            Lingkaran lingkaran = new Lingkaran();
             lingkaran.jj = scan.nextInt();
             if (lingkaran.jj % 7 == 0) {
                 lingkaran.RumusLingkaran1(lingkaran.jj);

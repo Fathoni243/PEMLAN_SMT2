@@ -1,6 +1,6 @@
 package com.SourceCode.FilkomTourPolymorphisme;
 
-public class Karyawan {
+public abstract class Karyawan {
     private String nama, alamat, noTelp, jk, kategori;
     
     Karyawan (String nama, String alamat, String noTelp, String jk, String kategori){

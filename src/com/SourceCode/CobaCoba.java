@@ -1,38 +1,25 @@
 package com.SourceCode;
 
+import java.util.Scanner;
+
 public class CobaCoba {
    public static void main(String[] args) {
-      Student s1 = new Student();
-      System.out.println("Student description:\n"
-              + "ID: " + s1.getId() + "\n"
-              + "Name: " + s1.getName() + "\n");
-   }
-}
+      Scanner scan = new Scanner(System.in);
+      int angka1 = (int)(Math.random()*11);
+      int angka2 = (int)(Math.random()*11);
+      boolean kondisi = true;
 
-class Student {
-   private String id;
-   private String name;
-   private String internalCode;
-   public Student() {
-      id = "None";
-      name = "Anonymous";
-      internalCode = "003";
-      // Student("None", "Anonymous");
-   }
-   public Student(String id, String name) {
-      this.id = id;
-      this.name = name;
-   }
-   public String getId() {
-      return id;
-   }
-   public void setId(String id) {
-      this.id = id;
-   }
-   public String getName() {
-      return name;
-   }
-   public void setName(String name) {
-      this.name = name;
+      while (kondisi) {
+         System.out.println("Berapakah hasil dari "+angka1+" + "+angka2+" ?");
+         System.out.print("Jawab : ");
+         int jawab = scan.nextInt();
+         
+         if (angka1 + angka2 != jawab) {
+            System.out.println("Jawaban kamu salah, coba lagi");
+         }else{
+            System.out.println("Jawaban kamu benar");
+            kondisi = false;
+         }
+      }
    }
 }
