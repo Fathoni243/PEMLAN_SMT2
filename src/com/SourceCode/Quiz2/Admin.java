@@ -26,8 +26,13 @@ public class Admin extends PegawaiTetap implements Info{
     public void infoPegawai() {
         System.out.println("Nama : "+getNama());
         System.out.println("Id : "+getId());
-        System.out.println("Id : "+getId());
-        
+        System.out.println("JenisKelamin : "+getJenisKelamin());
+        System.out.println("Gaji Pokok : "+getGajiPokok());
+        System.out.println("Gaji Pokok : "+getGajiPokok());
+        System.out.println("Tunjangan : "+getTunjangan());
+        System.out.println("Anggota Keluarga : "+getAnggotaKeluarga());
+        System.out.println("Lama Kerja : "+getLamaKerja());
+        System.out.println("Total Gaji : "+this.gaji());
     }
 
     @Override
