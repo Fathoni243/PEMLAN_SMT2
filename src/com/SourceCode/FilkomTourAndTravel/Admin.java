@@ -1,6 +1,6 @@
 package com.SourceCode.FilkomTourAndTravel;
 
-public class Admin extends Karyawan{
+public class Admin extends Karyawan {
     private int tunjangan;
 
     Admin(String nama, String alamat, String noTelp, String jk, String kategori, int tunjangan) {
@@ -22,4 +22,5 @@ public class Admin extends Karyawan{
         super.getInfo();
         System.out.println("Tunjangan Karyawan     : "+getTunjangan());
     }
+
 }

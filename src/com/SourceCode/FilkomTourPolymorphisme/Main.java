@@ -21,8 +21,13 @@ public class Main {
         scan.nextLine();
         Mobil[] mobilArray = new Mobil[jmlMobil];
 
+        // coba buat object polymorphism di class abstract karyawan
         Karyawan karyawan = new Admin("nama", "alamat", "noTelp", "jk", "kategori", 100);
         System.out.println(karyawan.getNama());
+        // gabisa soalnya object karyawan itu dari superclass Karyawan
+        // System.out.println(karyawan.getTunjangan());
+
+        // Karyawan k = new Karyawan("nama","alamat","noTelp","L","admin");
 
         for (int i = 0; i < mobilArray.length; i++) {
             System.out.println("=========================================");
@@ -81,24 +86,24 @@ public class Main {
             
         }
 
-        TampilMobil(mobilArray);
-
-        System.out.println("============ Daftar Karyawan ============");
-        System.out.println("=========================================");
-        for (int i = 0; i < karyawanArray.length; i++) {
-            System.out.println("Karyawan ke-"+(i+1));
-            getInfoKaryawan(karyawanArray[i]);
-            System.out.println("=========================================");
-        }
+        Tampil(mobilArray, karyawanArray);
 
     }
 
-    public static void TampilMobil(Mobil[] mobil){
+    public static void Tampil(Mobil[] mobil, Karyawan[] karyawan){
+        System.out.println();
         System.out.println("=========================================");
         System.out.println("=========== Daftar Mobil Sewa ===========");
         System.out.println("=========================================");
         for (int i = 0; i < mobil.length; i++) {
             mobil[i].getInfo();
+            System.out.println("=========================================");
+        }
+        System.out.println("============ Daftar Karyawan ============");
+        System.out.println("=========================================");
+        for (int i = 0; i < karyawan.length; i++) {
+            System.out.println("Karyawan ke-"+(i+1));
+            getInfoKaryawan(karyawan[i]);
             System.out.println("=========================================");
         }
     }

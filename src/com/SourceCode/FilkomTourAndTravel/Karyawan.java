@@ -58,4 +58,5 @@ public class Karyawan {
         System.out.println("Jenis Kelamin Karyawan : "+getJk());
         System.out.println("Kategori Karyawan      : "+getKategori());
     }
+
 }
