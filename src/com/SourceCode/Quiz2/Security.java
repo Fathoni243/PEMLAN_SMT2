@@ -27,8 +27,18 @@ public class Security extends PegawaiTidakTetap{
     }
 
     @Override
+    public int getBonus() {
+        int bonus = 0;
+        if (getLamaKerja() > 8) {
+            bonus = (getLamaKerja() - 8) * getBonus();
+        }
+        
+        return bonus;
+    }
+
+    @Override
     public int gaji() {
-        return getTarif() + getBonus();
+        return getTarif() + this.getBonus();
         // return super.gaji();
     }
 }

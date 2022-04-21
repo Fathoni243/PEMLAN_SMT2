@@ -17,8 +17,18 @@ public class CleaningService extends PegawaiTidakTetap{
     }
 
     @Override
+    public int getBonus() {
+        int bonus = 0;
+        if (getLamaKerja() > 5) {
+            bonus = (getLamaKerja() - 5) * getBonus();
+        }
+        
+        return bonus;
+    }
+
+    @Override
     public int gaji() {
-        return getTarif() + getBonus();
+        return getTarif() + this.getBonus();
         // return super.gaji();
     }
 }

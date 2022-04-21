@@ -1,6 +1,6 @@
 package com.SourceCode.Quiz2;
 
-public class Admin extends PegawaiTetap{
+public class Admin extends PegawaiTetap implements Info{
     private int lamaKerja;
     
     public Admin(String nama, int id, char jenisKelamin, int gajiPokok, int tunjangan, int anggotaKeluarga, int lamaKerja) {
@@ -20,5 +20,19 @@ public class Admin extends PegawaiTetap{
     public int gaji() {
         return getGajiPokok() + (getTunjangan() * getAnggotaKeluarga());
         // return super.gaji();
+    }
+
+    @Override
+    public void infoPegawai() {
+        System.out.println("Nama : "+getNama());
+        System.out.println("Id : "+getId());
+        System.out.println("Id : "+getId());
+        
+    }
+
+    @Override
+    public void infoRemunerasi() {
+        // TODO Auto-generated method stub
+        
     }
 }
