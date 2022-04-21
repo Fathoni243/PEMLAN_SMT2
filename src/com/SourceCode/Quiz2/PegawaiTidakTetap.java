@@ -5,8 +5,11 @@ public abstract class PegawaiTidakTetap extends Pegawai{
     private int bonus;
     private int lamaKerja;
 
-    public PegawaiTidakTetap(String nama, int id, char jenisKelamin) {
+    public PegawaiTidakTetap(String nama, int id, char jenisKelamin, int tarif, int bonus, int lamaKerja) {
         super(nama, id, jenisKelamin);
+        this.tarif = tarif;
+        this.bonus = bonus;
+        this.lamaKerja = lamaKerja;
     }
 
     public int getTarif() {
