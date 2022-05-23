@@ -57,14 +57,17 @@ public class MahasiswaFilkom extends Manusia{
     }
 
     @Override
+    public double getPendapatan() {
+        return super.getPendapatan() + this.getBeasiswa();
+    }
+
+    @Override
     public String toString() {
-        return "Nama          : "+super.getNama()+
-                "\nNIK           : "+super.getNIK()+
-                "\nJenis Kelamin : "+super.getJenisKelamin()+
-                "\nPendapatan    : "+(super.getPendapatan()+this.getBeasiswa())+"$"+
+        return super.toString()+
                 "\nNIM           : "+this.getNIM()+
                 "\nIPK           : "+this.getIPK()+
                 "\nStatus        : "+this.getStatus();
+
     }
 
 }

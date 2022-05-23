@@ -37,7 +37,7 @@ public class Admin extends PegawaiTetap implements Info{
 
     @Override
     public void infoRemunerasi() {
-        // TODO Auto-generated method stub
-        
+        int Remunerasi = (int) (getLamaKerja() * 0.3 * getTunjangan());
+        System.out.println("Remunerasi : "+Remunerasi);
     }
 }

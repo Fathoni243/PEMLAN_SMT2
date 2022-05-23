@@ -19,7 +19,7 @@ public class Manager extends PegawaiTetap implements Info{
     }
 
     public int getLevel() {
-        return level;
+        return level > 4 ? 0 : level;
     }
 
     public void setLevel(int level) {
@@ -41,13 +41,13 @@ public class Manager extends PegawaiTetap implements Info{
         System.out.println("Gaji Pokok : "+getGajiPokok());
         System.out.println("Tunjangan : "+getTunjangan());
         System.out.println("Anggota Keluarga : "+getAnggotaKeluarga());
-        System.out.println("Lama Kerja : "+getLamaKerja());
+        System.out.println("Departemen : "+getDepartemen());
+        System.out.println("Level : "+getLevel());
         System.out.println("Total Gaji : "+this.gaji());
     }
 
     @Override
     public void infoRemunerasi() {
-        // TODO Auto-generated method stub
         
     }
 }

@@ -135,11 +135,13 @@ public class Pekerja extends Manusia{
     }
 
     @Override
+    public double getPendapatan() {
+        return super.getPendapatan()+this.getGaji()+this.getBonus();
+    }
+
+    @Override
     public String toString() {
-        return "Nama          : "+super.getNama()+
-                "\nNIK           : "+super.getNIK()+
-                "\nJenis Kelamin : "+super.getJenisKelamin()+
-                "\nPendapatan    : "+(super.getPendapatan()+this.getGaji()+this.getBonus())+"$"+
+        return super.toString()+
                 "\nBonus         : "+this.getBonus()+"$"+
                 "\nGaji          : "+this.getGaji()+"$"+
                 "\nStatus        : "+this.getStatus();

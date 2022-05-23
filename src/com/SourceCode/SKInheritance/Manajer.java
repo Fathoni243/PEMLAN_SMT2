@@ -27,20 +27,13 @@ public class Manajer extends Pekerja{
     }
 
     @Override
-    public String toString() {
-        return "Nama          : "+super.getNama()+
-                "\nNIK           : "+super.getNIK()+
-                "\nJenis Kelamin : "+super.getJenisKelamin()+
-                "\nPendapatan    : "+(this.getTunjangan()+super.getGaji()+this.getBonus())+"$"+
-                "\nBonus         : "+this.getBonus()+"$"+
-                "\nGaji          : "+super.getGaji()+"$"+
-                "\nStatus        : "+super.getStatus()+
-                "\nLama Kerja    : "+this.getLamaKerja();
+    public double getPendapatan() {
+        return this.getTunjangan()+super.getGaji()+this.getBonus();
     }
 
-    // @Override
-    // public String toString() {
-    //     return super.toString();
-
-    // }
+    @Override
+    public String toString() {
+        return super.toString()+
+                "\nLama Kerja    : "+this.getLamaKerja();
+    }
 }
