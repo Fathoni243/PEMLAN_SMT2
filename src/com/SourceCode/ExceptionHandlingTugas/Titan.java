@@ -11,7 +11,7 @@ public class Titan extends Character{
         boolean kena;
         double randomNum = (double)(Math.random() * 11); 
         // cek randomNum
-        // System.out.println("random titan"+randomNum);
+        // System.out.println("random titan :"+randomNum);
 
         if (randomNum <= 4) {
             kena = true;

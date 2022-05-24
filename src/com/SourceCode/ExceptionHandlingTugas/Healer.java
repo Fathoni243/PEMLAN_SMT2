@@ -10,6 +10,8 @@ public class Healer extends Character{
     public boolean attack() {
         boolean kena;
         double randomNum = (double)(Math.random() * 11); 
+        // cek randomNum
+        // System.out.println("random healer :"+randomNum);
         
         if (randomNum <= 8.5) {
             kena = true;
@@ -21,8 +23,7 @@ public class Healer extends Character{
     }
 
     public void heal(){
-        int newHP = getHP();
-        newHP = newHP +  25;
+        setHP(getHP() + 25);
     }
     
 }

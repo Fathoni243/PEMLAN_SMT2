@@ -9,7 +9,9 @@ public class Warrior extends Character{
     @Override
     public boolean attack() {
         boolean kena;
-        double randomNum = (double)(Math.random() * 11); 
+        double randomNum = (double)(Math.random() * 11);
+        // cek randomNum
+        // System.out.println("random warrior :"+randomNum); 
         
         if (randomNum <= 6) {
             kena = true;
