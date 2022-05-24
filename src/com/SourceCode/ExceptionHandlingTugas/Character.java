@@ -49,7 +49,7 @@ public abstract class Character {
         if (HP <= 0) {
             setHP(0);
         }
-    };
+    }
 
     public void info(){
         System.out.println("HP          : "+getHP());
