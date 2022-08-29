@@ -5,20 +5,11 @@ import java.util.*;
 public class CobaCoba{
 
    public static void main(String[] args) {
-       Scanner scan = new Scanner(System.in);
+      Scanner scan = new Scanner(System.in);
 
-       int[] array = {1,2,3};
+      System.out.print("Input");
+      String coba = scan.nextLine();
+      System.out.println(coba);
 
-       System.out.println(array[-1]);
-
-       try {
-           int a = scan.nextInt();
-           int b = scan.nextInt();
-           int c = scan.nextInt();
-       } catch (InputMismatchException e) {
-           System.out.println("Salah input");
-       }catch (Exception e){
-           System.out.println("Error");
-       }
    }
 }

@@ -85,9 +85,7 @@ public class Main implements CetakInfo{
         int jmlMobil = scan.nextInt();
         scan.nextLine();
         Mobil[] mobilArray = new Mobil[jmlMobil];
-        //cobacoba
 
-        // Cek doang
         // coba buat object polymorphism di class abstract karyawan
         // Karyawan karyawan = new Admin("nama", "alamat", "noTelp", "jk", "kategori", 100);
         // System.out.println(karyawan.getNama());

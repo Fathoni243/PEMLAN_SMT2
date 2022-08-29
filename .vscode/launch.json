@@ -1,0 +1,259 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch CobaCoba",
+            "request": "launch",
+            "mainClass": "com.SourceCode.CobaCoba",
+            "projectName": "KUMPULAN SC_4397561c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "com.SourceCode.DataKaryawan.Main",
+            "projectName": "KUMPULAN SC_4397561c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(1)",
+            "request": "launch",
+            "mainClass": "com.SourceCode.DataMobil.Main",
+            "projectName": "KUMPULAN SC_4397561c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(2)",
+            "request": "launch",
+            "mainClass": "com.SourceCode.ExceptionHandlingTugas.Main",
+            "projectName": "KUMPULAN SC_4397561c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(3)",
+            "request": "launch",
+            "mainClass": "com.SourceCode.FilkomTourAndTravel.Main",
+            "projectName": "KUMPULAN SC_4397561c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(4)",
+            "request": "launch",
+            "mainClass": "com.SourceCode.FilkomTourPolymorphisme.Main",
+            "projectName": "KUMPULAN SC_4397561c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Semut",
+            "request": "launch",
+            "mainClass": "com.SourceCode.HR_BCC.Semut",
+            "projectName": "KUMPULAN SC_4397561c"
+        },
+        {
+            "type": "java",
+            "name": "Launch civilWar",
+            "request": "launch",
+            "mainClass": "com.SourceCode.HR_BCC.civilWar",
+            "projectName": "KUMPULAN SC_4397561c"
+        },
+        {
+            "type": "java",
+            "name": "Launch winnerOfTheWinner",
+            "request": "launch",
+            "mainClass": "com.SourceCode.HR_BCC.winnerOfTheWinner",
+            "projectName": "KUMPULAN SC_4397561c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(5)",
+            "request": "launch",
+            "mainClass": "com.SourceCode.HR_MenghitungLuas.Main",
+            "projectName": "KUMPULAN SC_4397561c"
+        },
+        {
+            "type": "java",
+            "name": "Launch main",
+            "request": "launch",
+            "mainClass": "com.SourceCode.HR_Selde.main",
+            "projectName": "KUMPULAN SC_4397561c"
+        },
+        {
+            "type": "java",
+            "name": "Launch main(1)",
+            "request": "launch",
+            "mainClass": "com.SourceCode.HR_SuratKaisar.main",
+            "projectName": "KUMPULAN SC_4397561c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(6)",
+            "request": "launch",
+            "mainClass": "com.SourceCode.KumpulanSCgjd.UBFood.Main",
+            "projectName": "KUMPULAN SC_4397561c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(7)",
+            "request": "launch",
+            "mainClass": "com.SourceCode.LatihanUTP.Main",
+            "projectName": "KUMPULAN SC_4397561c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(8)",
+            "request": "launch",
+            "mainClass": "com.SourceCode.Quiz1.Main",
+            "projectName": "KUMPULAN SC_4397561c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(9)",
+            "request": "launch",
+            "mainClass": "com.SourceCode.Quiz2.Main",
+            "projectName": "KUMPULAN SC_4397561c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(10)",
+            "request": "launch",
+            "mainClass": "com.SourceCode.RentCar.Main",
+            "projectName": "KUMPULAN SC_4397561c"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayListDanLinkedList",
+            "request": "launch",
+            "mainClass": "com.SourceCode.SCMateri.ArrayListDanLinkedList",
+            "projectName": "KUMPULAN SC_4397561c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(11)",
+            "request": "launch",
+            "mainClass": "com.SourceCode.SCMateri.ArrayOfObject.Main",
+            "projectName": "KUMPULAN SC_4397561c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(12)",
+            "request": "launch",
+            "mainClass": "com.SourceCode.SCMateri.CobaArrayList.Main",
+            "projectName": "KUMPULAN SC_4397561c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Enkapsulasi",
+            "request": "launch",
+            "mainClass": "com.SourceCode.SCMateri.Enkapsulasi",
+            "projectName": "KUMPULAN SC_4397561c"
+        },
+        {
+            "type": "java",
+            "name": "Launch ExceptionHandling",
+            "request": "launch",
+            "mainClass": "com.SourceCode.SCMateri.ExceptionHandling",
+            "projectName": "KUMPULAN SC_4397561c"
+        },
+        {
+            "type": "java",
+            "name": "Launch ExceptionTeory",
+            "request": "launch",
+            "mainClass": "com.SourceCode.SCMateri.ExceptionTeory",
+            "projectName": "KUMPULAN SC_4397561c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Interface",
+            "request": "launch",
+            "mainClass": "com.SourceCode.SCMateri.Interface",
+            "projectName": "KUMPULAN SC_4397561c"
+        },
+        {
+            "type": "java",
+            "name": "Launch MacamMethod",
+            "request": "launch",
+            "mainClass": "com.SourceCode.SCMateri.MacamMethod",
+            "projectName": "KUMPULAN SC_4397561c"
+        },
+        {
+            "type": "java",
+            "name": "Launch main(2)",
+            "request": "launch",
+            "mainClass": "com.SourceCode.SCMateri.OOPTeory.main",
+            "projectName": "KUMPULAN SC_4397561c"
+        },
+        {
+            "type": "java",
+            "name": "Launch PassByReference",
+            "request": "launch",
+            "mainClass": "com.SourceCode.SCMateri.PassByReference",
+            "projectName": "KUMPULAN SC_4397561c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(13)",
+            "request": "launch",
+            "mainClass": "com.SourceCode.SKInheritance.Main",
+            "projectName": "KUMPULAN SC_4397561c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(14)",
+            "request": "launch",
+            "mainClass": "com.SourceCode.SKPolymorphism.Main",
+            "projectName": "KUMPULAN SC_4397561c"
+        },
+        {
+            "type": "java",
+            "name": "Launch ProjectPratikum",
+            "request": "launch",
+            "mainClass": "com.SourceCode.SwalayanNabil.ProjectPratikum",
+            "projectName": "KUMPULAN SC_4397561c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(15)",
+            "request": "launch",
+            "mainClass": "com.SourceCode.SwalayanTiny.Main",
+            "projectName": "KUMPULAN SC_4397561c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(16)",
+            "request": "launch",
+            "mainClass": "com.SourceCode.TipeDataFinal.Main",
+            "projectName": "KUMPULAN SC_4397561c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(17)",
+            "request": "launch",
+            "mainClass": "com.SourceCode.UBFood.Main",
+            "projectName": "KUMPULAN SC_4397561c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(18)",
+            "request": "launch",
+            "mainClass": "com.SourceCode.UTP.Main",
+            "projectName": "KUMPULAN SC_4397561c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(19)",
+            "request": "launch",
+            "mainClass": "com.SourceCode.uap_soal_2022_versi2.uap_soal_2022.Main",
+            "projectName": "KUMPULAN SC_4397561c"
+        }
+    ]
+}
