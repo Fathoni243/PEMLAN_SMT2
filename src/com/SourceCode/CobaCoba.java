@@ -5,24 +5,20 @@ import java.util.*;
 public class CobaCoba{
 
    public static void main(String[] args) {
-        int[] array = {0,1,2,3};
+       Scanner scan = new Scanner(System.in);
 
-        Scanner userInput = new Scanner(System.in);
-        boolean condition = true;
+       int[] array = {1,2,3};
 
-        while (condition) {
-            System.out.print("nilai array ke: ");
-            
-            // System.out.println("Handling out of bound");
-            int index = userInput.nextInt();
-            try {
-                System.out.printf("index ke-%d, adalah %d\n", index, array[index]);
-            } catch (ArrayIndexOutOfBoundsException e){
-                System.err.println(e);
-            }
-            
-        }
+       System.out.println(array[-1]);
 
-        System.out.println("Akhir");
+       try {
+           int a = scan.nextInt();
+           int b = scan.nextInt();
+           int c = scan.nextInt();
+       } catch (InputMismatchException e) {
+           System.out.println("Salah input");
+       }catch (Exception e){
+           System.out.println("Error");
+       }
    }
 }

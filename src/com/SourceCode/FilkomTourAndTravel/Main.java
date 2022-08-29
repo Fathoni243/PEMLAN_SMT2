@@ -3,6 +3,24 @@ package com.SourceCode.FilkomTourAndTravel;
 import java.util.Scanner;
 
 public class Main {
+
+    public static void getTampil(Mobil[] mobil, Karyawan[] karyawan ){
+        System.out.println("=========================================");
+        System.out.println("=========== Daftar Mobil Sewa ===========");
+        System.out.println("=========================================");
+        for (int i = 0; i < mobil.length; i++) {
+            mobil[i].getInfo();
+            System.out.println("=========================================");
+        }
+
+        System.out.println("============ Daftar Karyawan ============");
+        System.out.println("=========================================");
+        for (int i = 0; i < karyawan.length; i++) {
+            karyawan[i].getInfo();
+            System.out.println("=========================================");
+        }
+    }
+    
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String rute="", nama="", alamat="", noTelp="", jk="", kategori="";
@@ -80,20 +98,4 @@ public class Main {
 
     }
 
-    public static void getTampil(Mobil[] mobil, Karyawan[] karyawan ){
-        System.out.println("=========================================");
-        System.out.println("=========== Daftar Mobil Sewa ===========");
-        System.out.println("=========================================");
-        for (int i = 0; i < mobil.length; i++) {
-            mobil[i].getInfo();
-            System.out.println("=========================================");
-        }
-
-        System.out.println("============ Daftar Karyawan ============");
-        System.out.println("=========================================");
-        for (int i = 0; i < karyawan.length; i++) {
-            karyawan[i].getInfo();
-            System.out.println("=========================================");
-        }
-    }
 }

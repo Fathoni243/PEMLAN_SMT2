@@ -1,7 +1,7 @@
 package com.SourceCode.ExceptionHandlingTugas;
 
 public class Magician extends Character{
-    double random;
+    // double random;
 
     Magician(int defence, int attack, int HP) {
         super(defence, attack, HP);

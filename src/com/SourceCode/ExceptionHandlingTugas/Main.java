@@ -13,27 +13,25 @@ public class Main {
         Character magician = new Magician(10, 60, 100);
         Character healer = new Healer(10, 10, 70);
         Character warrior = new Warrior(30, 25, 80);
-
+        
         System.out.println("Selamat Datang di Game Defend FILKOM!");
         System.out.print("Silahkan Masukkan Nama Player : ");
         String nama = scan.nextLine();
-        System.out.println("Silahkan pilih karakter yang anda inginkan : ");
-        System.out.println("1. Magician");
-        System.out.println("2. Healer");
-        System.out.println("3. Warrior");
         
         while (ulang) {
-            System.out.print("Masukkan Pilihan Anda : ");
-
             boolean condition = true;
             int pilih = 0;
             while (condition) {
                 try {
+                    System.out.println("Silahkan pilih karakter yang anda inginkan : ");
+                    System.out.println("1. Magician");
+                    System.out.println("2. Healer"); 
+                    System.out.println("3. Warrior");
+                    System.out.print("Masukkan Pilihan Anda : ");
                     pilih = scan.nextInt();
                     condition = false;  
                 } catch (InputMismatchException e) {
                     System.out.println("Tolong Masukkan Angka");
-                    System.out.print("Masukkan Pilihan Anda : ");
                 }
                 scan.nextLine();
             }

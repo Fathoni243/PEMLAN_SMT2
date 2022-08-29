@@ -2,7 +2,72 @@ package com.SourceCode.FilkomTourPolymorphisme;
 
 import java.util.Scanner;
 
-public class Main {
+interface CetakInfo{
+    
+    public static void getInfoKaryawan(Karyawan k){
+        if (k instanceof Admin) {
+            Admin admin = (Admin) k;
+            admin.getInfo();
+        }else if (k instanceof SupirRentcar) {
+            SupirRentcar supirRentcar = (SupirRentcar) k;
+            supirRentcar.getInfo();
+        }else if (k instanceof SupirTravel) {
+            SupirTravel supirTravel = (SupirTravel) k;
+            supirTravel.getInfo();
+        }
+    }
+
+    public static void Tampil(Mobil[] mobil, Karyawan[] karyawan){
+        System.out.println();
+        System.out.println("=========================================");
+        System.out.println("=========== Daftar Mobil Sewa ===========");
+        System.out.println("=========================================");
+        for (int i = 0; i < mobil.length; i++) {
+            mobil[i].getInfo();
+            System.out.println("=========================================");
+        }
+        System.out.println("============ Daftar Karyawan ============");
+        System.out.println("=========================================");
+        for (int i = 0; i < karyawan.length; i++) {
+            System.out.println("Karyawan ke-"+(i+1));
+            getInfoKaryawan(karyawan[i]);
+            System.out.println("=========================================");
+        }
+    }
+}
+
+public class Main implements CetakInfo{
+
+    // public static void Tampil(Mobil[] mobil, Karyawan[] karyawan){
+    //     System.out.println();
+    //     System.out.println("=========================================");
+    //     System.out.println("=========== Daftar Mobil Sewa ===========");
+    //     System.out.println("=========================================");
+    //     for (int i = 0; i < mobil.length; i++) {
+    //         mobil[i].getInfo();
+    //         System.out.println("=========================================");
+    //     }
+    //     System.out.println("============ Daftar Karyawan ============");
+    //     System.out.println("=========================================");
+    //     for (int i = 0; i < karyawan.length; i++) {
+    //         System.out.println("Karyawan ke-"+(i+1));
+    //         getInfoKaryawan(karyawan[i]);
+    //         System.out.println("=========================================");
+    //     }
+    // }
+
+    // public static void getInfoKaryawan(Karyawan k){
+    //     if (k instanceof Admin) {
+    //         Admin admin = (Admin) k;
+    //         admin.getInfo();
+    //     }else if (k instanceof SupirRentcar) {
+    //         SupirRentcar supirRentcar = (SupirRentcar) k;
+    //         supirRentcar.getInfo();
+    //     }else if (k instanceof SupirTravel) {
+    //         SupirTravel supirTravel = (SupirTravel) k;
+    //         supirTravel.getInfo();
+    //     }
+    // }
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -20,10 +85,12 @@ public class Main {
         int jmlMobil = scan.nextInt();
         scan.nextLine();
         Mobil[] mobilArray = new Mobil[jmlMobil];
+        //cobacoba
 
+        // Cek doang
         // coba buat object polymorphism di class abstract karyawan
-        Karyawan karyawan = new Admin("nama", "alamat", "noTelp", "jk", "kategori", 100);
-        System.out.println(karyawan.getNama());
+        // Karyawan karyawan = new Admin("nama", "alamat", "noTelp", "jk", "kategori", 100);
+        // System.out.println(karyawan.getNama());
         // gabisa soalnya object karyawan itu dari superclass Karyawan
         // System.out.println(karyawan.getTunjangan());
 
@@ -86,38 +153,8 @@ public class Main {
             
         }
 
-        Tampil(mobilArray, karyawanArray);
+        CetakInfo.Tampil(mobilArray, karyawanArray);
 
     }
 
-    public static void Tampil(Mobil[] mobil, Karyawan[] karyawan){
-        System.out.println();
-        System.out.println("=========================================");
-        System.out.println("=========== Daftar Mobil Sewa ===========");
-        System.out.println("=========================================");
-        for (int i = 0; i < mobil.length; i++) {
-            mobil[i].getInfo();
-            System.out.println("=========================================");
-        }
-        System.out.println("============ Daftar Karyawan ============");
-        System.out.println("=========================================");
-        for (int i = 0; i < karyawan.length; i++) {
-            System.out.println("Karyawan ke-"+(i+1));
-            getInfoKaryawan(karyawan[i]);
-            System.out.println("=========================================");
-        }
-    }
-
-    public static void getInfoKaryawan(Karyawan k){
-        if (k instanceof Admin) {
-            Admin admin = (Admin) k;
-            admin.getInfo();
-        }else if (k instanceof SupirRentcar) {
-            SupirRentcar supirRentcar = (SupirRentcar) k;
-            supirRentcar.getInfo();
-        }else if (k instanceof SupirTravel) {
-            SupirTravel supirTravel = (SupirTravel) k;
-            supirTravel.getInfo();
-        }
-    }
 }
